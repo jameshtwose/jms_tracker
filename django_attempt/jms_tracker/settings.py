@@ -25,12 +25,16 @@ SECRET_KEY = 'x&15ykh*s0r1=n2m@7keei=%#h@uoskxk3qc_x#$(xilgs8%qz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jmstracker--jameshtwose.repl.co', 'jmstracker.jameshtwose.repl.co']
+ALLOWED_HOSTS = ['jmstracker--jameshtwose.repl.co',
+'jmstracker.jameshtwose.repl.co',
+'127.0.0.1']
+
 X_FRAME_OPTIONS = 'ALLOW-FROM https://repl.it/'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,13 +77,23 @@ WSGI_APPLICATION = 'jms_tracker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tracker',
+        'USER': 'tracker',
+        'PASSWORD': 'HAA5oJGgylRToGIrpEKc',
+        'HOST': '188.166.98.139',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
