@@ -1,5 +1,5 @@
 certifi==2020.12.5
-click @ file:///tmp/build/80754af9/click_1620867881259/work
+# click @ file:///tmp/build/80754af9/click_1620867881259/work
 colorama==0.4.4
 docutils==0.17.1
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
