@@ -1,0 +1,7 @@
+{
+  "name": "JmsTracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

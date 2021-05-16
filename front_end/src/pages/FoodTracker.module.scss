@@ -1,0 +1,21 @@
+.FoodTracker {
+  ion-content {
+    --padding-start: 30px;
+    --padding-end: 30px;
+    --padding-top: 30px;
+  }
+  form > * {
+    margin-bottom: 10px;
+  }
+  input {
+    border-radius: var(--jt-border-radius);
+    border: hsl(0, 0%, 80%) solid 1px;
+    padding: 10px;
+    display: block;
+  }
+  input[type="submit"] {
+    background-color: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+    border: none;
+  }
+}
