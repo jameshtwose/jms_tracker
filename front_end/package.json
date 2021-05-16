@@ -64,6 +64,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "2.4.7",
+    "@ionic/cli": "^6.15.0",
     "@types/react-select": "^4.0.15",
     "node-sass": "^6.0.0"
   },
