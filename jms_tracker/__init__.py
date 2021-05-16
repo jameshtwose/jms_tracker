@@ -30,8 +30,8 @@ def create_app():
     app.register_blueprint(auth_blueprint)
 
     # blueprint for non-auth parts of app
-    from .app import app as main_blueprint
-    app.register_blueprint(main_blueprint)
+    from .app import app as app_blueprint
+    app.register_blueprint(app_blueprint)
 
     # blueprint for food parts of app
     from .food import food as food_blueprint
