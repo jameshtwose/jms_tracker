@@ -33,4 +33,8 @@ def create_app():
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
+    # blueprint for food parts of app
+    from .food import food as food_blueprint
+    app.register_blueprint(food_blueprint)
+
     return app

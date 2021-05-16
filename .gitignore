@@ -61,3 +61,11 @@ data/
 .Rproj.user
 
 db.sqlite
+
+*.ipynb_checkpoints
+DS_stuff/.ipynb_checkpoints
+DS_stuff/.DS_store
+DS_stuff/MyFitbitData/
+.env
+
+.DS_store
